@@ -7,28 +7,25 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Pages\Login.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="bootstrap" Version="5.2.2" />
+    <Content Remove="C:\Users\clair\.nuget\packages\bootstrap.sass\5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.js" />
+    <Content Remove="C:\Users\clair\.nuget\packages\bootstrap.sass\5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.js.map" />
+    <Content Remove="C:\Users\clair\.nuget\packages\bootstrap.sass\5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js" />
+    <Content Remove="C:\Users\clair\.nuget\packages\bootstrap.sass\5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js.map" />
+    <Content Remove="C:\Users\clair\.nuget\packages\bootstrap.sass\5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.js.map" />
+    <Content Remove="C:\Users\clair\.nuget\packages\bootstrap.sass\5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.min.js" />
+    <Content Remove="C:\Users\clair\.nuget\packages\bootstrap.sass\5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map" />
+    <Content Remove="C:\Users\clair\.nuget\packages\bootstrap\5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.js" />
+    <Content Remove="C:\Users\clair\.nuget\packages\bootstrap\5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.js.map" />
+    <Content Remove="C:\Users\clair\.nuget\packages\bootstrap\5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js" />
+    <Content Remove="C:\Users\clair\.nuget\packages\bootstrap\5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js.map" />
+    <Content Remove="C:\Users\clair\.nuget\packages\bootstrap\5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.js.map" />
+    <Content Remove="C:\Users\clair\.nuget\packages\bootstrap\5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.min.js" />
+    <Content Remove="C:\Users\clair\.nuget\packages\bootstrap\5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\fonts\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Pages\Login.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="Pages\Login.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Pages\Login.razor" />
   </ItemGroup>
 
 </Project>
