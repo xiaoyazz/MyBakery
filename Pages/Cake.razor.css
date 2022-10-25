@@ -1,2 +1,87 @@
-﻿body {
+﻿/* Cake Page CSS */
+
+body {
+    background: #decaca;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.cake-title {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    padding:50px;
+    margin-left:40%;
+}
+
+h1 {
+    margin: 30px 10px 0 20px;
+    font-size: 60px;
+    font-family: 'Kaushan Script', cursive;
+    color: #1a1a1a;
+    text-shadow: 2px 2px 2px #a82a87;
+}
+
+.cake-icon {
+    max-width: 5%;
+}
+
+.nav-menu a {
+    float: right;
+    margin-right: 50px;
+    color: #583333;
+    text-decoration:none;
+    transition: 0.3s;
+    font-family: Consolas;
+    font-size: 24px;
+}
+
+    .nav-menu a:hover {
+        color: #a82a87;
+    }
+
+.cake-content {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 40px;
+    font-family: Consolas;
+}
+
+.cake-item {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin: 10px 10px 10px;
+    padding: 30px 5px 5px;
+    box-sizing: border-box;
+    min-width: 200px;
+    width: calc(30% - 20px);
+    flex-grow: 1;
+    cursor:pointer;
+}
+
+    .cake-item:hover {
+        box-shadow: 0 0 11px rgba(33,33,33,.2);
+    }
+
+.cake-item-name {
+    font-size: 28px;
+    font-weight: 800;
+    color: #826985;
+    margin-top:20px;
+}
+
+.cake-item-price {
+    font-size: 22px;
+    font-weight: 200;
+    color: #826985;
+}
+
+.cake-item-img {
+    max-width: 60%;
+    max-height: 200px;
+    border-radius:5px;
 }
