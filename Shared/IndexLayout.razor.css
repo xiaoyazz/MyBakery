@@ -33,7 +33,9 @@ h1 {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #94748a;
+    /*    background-color: #b63737;
+    opacity:0.34;*/
+    background-color: rgba(182, 55, 55, 0.34);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -44,14 +46,14 @@ h1 {
         padding: 18px 18px 18px 40px;
         text-decoration: none;
         font-size: 32px;
-        color: #b9b9b9;
+        color: #583333;
         display: block;
         transition: 0.3s;
         font-family: Consolas;
     }
 
         .sidenav a:hover {
-            color: #f1f1f1;
+            color: #fff;
         }
 
 
