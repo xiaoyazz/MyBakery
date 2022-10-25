@@ -1,0 +1,114 @@
+﻿
+.login-section {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #bd9b9b, #b18d94, #a4808e, #94748a, #826985);
+    height: 100vh;
+    overflow:hidden;
+}
+
+.form-section {
+    position:absolute;
+    top:40%;
+    left:50%;
+    width:600px;
+    transform:translate(-50%, -50%);
+    background:#fff;
+    border-radius:10px;
+}
+
+    .form-section h1 {
+        font-size: 60px;
+        font-family: 'Kaushan Script', cursive;
+        color: #826985;
+        text-align: center;
+        padding: 30px;
+        border-bottom: 1px solid #b6b6b6;
+    }
+
+.form-section form {
+    padding: 20px 40px;
+    box-sizing:border-box;
+}
+
+form .txt-field {
+    position:relative;
+    margin: 40px 0;
+    border-bottom: 2px solid #b6b6b6;
+}
+
+.txt-field input {
+    width:100%;
+    padding:0 5px;
+    height:40px;
+    font-size:16px;
+    border:none;
+    background:none;
+    outline:none;
+}
+
+.txt-field label {
+    position:absolute;
+    top:40%;
+    left:5px;
+    color:#c3c3c3;
+    transform:translateY(-50%);
+    font-size:16px;
+    pointer-events:none;
+    transition:.5s;
+}
+
+.txt-field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #94748a;
+    transition: .5s;
+}
+
+.txt-field input:focus ~ label,
+.txt-field input:valid ~ label { 
+    top: -5px;
+    color: #94748a;
+}
+
+.txt-field input:focus ~ span::before,
+.txt-field input:valid ~ span::before{
+    width:100%;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    background: #94748a;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+    input[type="submit"]:hover {
+        border: 1px solid #6d597a;
+        background: #6d597a;
+    }
+
+input[type="button"] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #94748a;
+    border-radius: 25px;
+    background: #fff;
+    color: #94748a;
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor:pointer;
+}
+
+    input[type="button"]:hover {
+        border-color: #eee2df;
+        background: #eee2df;
+    }

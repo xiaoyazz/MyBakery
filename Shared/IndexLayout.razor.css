@@ -25,6 +25,7 @@ h1 {
     text-shadow: 2px 2px 10px #1f1f1f;
 }
 
+/* Side nav bar */
 .sidenav {
     height: 100%;
     width: 300px;
@@ -32,19 +33,21 @@ h1 {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #bd9b9b;
+    background-color: #94748a;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
 
     .sidenav a {
+        margin-top:40px;
         padding: 18px 18px 18px 40px;
         text-decoration: none;
-        font-size: 25px;
-        color: #8d3434;
+        font-size: 32px;
+        color: #b9b9b9;
         display: block;
         transition: 0.3s;
+        font-family: Consolas;
     }
 
         .sidenav a:hover {
