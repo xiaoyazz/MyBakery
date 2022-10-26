@@ -2,7 +2,7 @@
 
 - A practice program for an online bakery shop
 - Support user login, view product, and buy product
-- Developed with <b>ASP.NET Core Blazor Server</b>, C#, HTML, CSS, Javascript
+- Developed with <b>ASP.NET Core Blazor Server</b>
 - Created by Xiaoya Zou on Oct 24, 2022
 
 <p><img width="400" src="https://user-images.githubusercontent.com/84748829/197943111-01a94e6a-9cca-4a3a-8456-39a1fe432ae6.JPG"></p>
