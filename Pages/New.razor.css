@@ -113,3 +113,16 @@ input[type="button"] {
         border-color: #eee2df;
         background: #eee2df;
     }
+
+.footer {
+    position: fixed;
+    bottom:0;
+    width:100%;
+}
+
+    .footer p {
+        text-align: center;
+        color: #583333;
+        font-family: Consolas;
+        font-size: 24px;
+    }

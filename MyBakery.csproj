@@ -28,4 +28,8 @@
     <Folder Include="wwwroot\fonts\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Blazored.Modal" Version="4.1.0" />
+  </ItemGroup>
+
 </Project>

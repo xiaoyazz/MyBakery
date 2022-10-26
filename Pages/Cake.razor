@@ -1,5 +1,6 @@
 ﻿@page "/cake";
 @layout MainLayout
+@inject IModalService modal
 
 <body class="cake-container">
     <div class="cake-page">
@@ -17,39 +18,128 @@
         <div class="cake-content">
             <article class="cake-item">
                 <img class="cake-item-img" src="../images/stephen-wheeler-lriquzyxkrm-unsplash.jpg" alt="chocolate cake" />
-                <p class="cake-item-name">Chocolate Cake</p>
+                <p class="cake-item-name">Chocolate Birthday</p>
                 <p class="cake-item-price">$<span class="value">22.00</span></p>
+                <!-- Choose cake quantity -->
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <input type="button" value="Add to cart" @onclick="ToggleModal" />
+
             </article>
             <article class="cake-item">
                 <img class="cake-item-img" src="../images/anirban-sengupta-gqvnc4bdryw-unsplash.jpg" alt="rainbow cake" />
-                <p class="cake-item-name">Rainbow Cake</p>
+                <p class="cake-item-name">Over the Rainbow</p>
                 <p class="cake-item-price">$<span class="value">26.00</span></p>
+                <!-- Choose cake quantity -->
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <input type="button" value="Add to cart" />
             </article>
             <article class="cake-item">
                 <img class="cake-item-img" src="../images/toa-heftiba-6fejpdvtghm-unsplash.jpg" alt="unicorn cake" />
-                <p class="cake-item-name">Unicorn Cake</p>
+                <p class="cake-item-name">Unicorn Dream</p>
                 <p class="cake-item-price">$<span class="value">28.00</span></p>
+                <!-- Choose cake quantity -->
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <input type="button" value="Add to cart" />
             </article>
             <article class="cake-item">
                 <img class="cake-item-img" src="../images/redvelvetcake.jpg" alt="redvelvet cake" />
-                <p class="cake-item-name">Red Velvet Cake</p>
-                <p class="cake-item-price">$<span class="value">22.00</span></p>
+                <p class="cake-item-name">Classic Red Velvet</p>
+                <p class="cake-item-price">$<span class="value">24.00</span></p>
+                <!-- Choose cake quantity -->
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <input type="button" value="Add to cart" />
             </article>
             <article class="cake-item">
                 <img class="cake-item-img" src="../images/mmcake.jpg" alt="m&m cake" />
-                <p class="cake-item-name">M&M Cake</p>
-                <p class="cake-item-price">$<span class="value">26.00</span></p>
+                <p class="cake-item-name">M & M & You</p>
+                <p class="cake-item-price">$<span class="value">28.00</span></p>
+                <!-- Choose cake quantity -->
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <input type="button" value="Add to cart" />
             </article>
             <article class="cake-item">
                 <img class="cake-item-img" src="../images/flowercake.jpg" alt="flower cake" />
-                <p class="cake-item-name">Flower Cake</p>
+                <p class="cake-item-name">Blossom</p>
                 <p class="cake-item-price">$<span class="value">28.00</span></p>
+                <!-- Choose cake quantity -->
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <input type="button" value="Add to cart" />
             </article>
         </div>
+        <div class="footer">Created by Xiaoya Zou 🧁 </div>
     </div>
 </body>
 
+<div class="@modalClass" tabindex="-1" style="display: @displayMode;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Thank you 💜</h5>
+                <button class="close" @onclick="ToggleModal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @*@ChildContent*@
+                The cake has been added into your cart!
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-continue" @onclick="ToggleModal">Continue</button>
+                <button class="btn btn-checkout">Check Out</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 @code {
+    bool open = false;
+    string modalClass => open ? "modal fade show" : "modal fade";
+    string displayMode => open ? "block" : "none";
+
+
+    private void ToggleModal()
+    {
+        open = !open;
+        StateHasChanged();
+    }
+
+    //[Parameter]
+    //public RenderFragment ChildContent { get; set; }
 
 }

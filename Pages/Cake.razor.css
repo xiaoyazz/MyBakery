@@ -85,3 +85,63 @@ h1 {
     max-height: 200px;
     border-radius:5px;
 }
+
+select {
+    width:100px;
+    height:40px;
+    margin-bottom:20px;
+}
+
+input[type="button"] {
+    border: none;
+    border-radius: 3px;
+    width: 160px;
+    height: 40px;
+    margin-bottom: 20px;
+    background: #94748a;
+    color: #fff;
+    font-size: 18px;
+}
+
+    input[type="button"]:hover {
+        background: #6d597a;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 10px;
+        color: #583333;
+        font-family: Consolas;
+        font-size: 24px;
+    }
+
+.modal-dialog {
+    font-family: Consolas;
+}
+.close{
+    border:none;
+    background:#fff;
+    font-size:22px;
+}
+
+.btn-continue {
+    border: 1px solid #94748a;
+    border-radius: 3px;
+    width: 160px;
+    height: 40px;
+    margin-bottom: 20px;
+    background: #fff;
+    color: #94748a;
+    font-size: 18px;
+}
+
+.btn-checkout {
+    border: none;
+    border-radius: 3px;
+    width: 160px;
+    height: 40px;
+    margin-bottom: 20px;
+    background: #94748a;
+    color: #fff;
+    font-size: 18px;
+}
