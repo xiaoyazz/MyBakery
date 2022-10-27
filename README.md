@@ -1,4 +1,4 @@
-# 🍰 MyBakery
+# 🥯 MyBakery 🛒
 
 - A practice program for an online bakery shop
 - Support user login, view product, and buy product
