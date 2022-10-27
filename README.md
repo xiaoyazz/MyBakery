@@ -1,6 +1,6 @@
 # 🥯 MyBakery 🛒
 
-- A practice program for an online bakery shop
+- Online bakery shop
 - Support user login, view product, and buy product
 - Developed with <b>ASP.NET Core Blazor Server</b>
 - Will add bread, pastry, payment, and order comfirmation page later 🚧
